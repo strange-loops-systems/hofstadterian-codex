@@ -1,0 +1,12 @@
+// CI-only Worker for Cloudflare Workers Builds (decision 566's zero-spend CI lane; decision 684).
+// It serves nothing: its builds run ../../hofstadterian-ci.sh, which is the reason it exists.
+// No route, no workers.dev URL, no binding, no secret. Its name must match the Worker
+// created in the Cloudflare account (Workers Builds checks it).
+{
+  "name": "loop-ci-hofstadterian-codex",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "previews": {}
+}
